@@ -27,7 +27,7 @@ button {
 
 body {
     background-color: var(--background-color);
-    background-image: url('/img/layered-waves-haikei.svg');
+    background-image: url('./img/layered-waves-haikei.svg');
     background-position: bottom;
     background-size: 100vw;
     background-repeat: no-repeat;
