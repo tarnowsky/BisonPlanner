@@ -2,11 +2,13 @@ const tasksWrapper = document.querySelector(".tasks-wrapper");
 const newTaskBtn = document.querySelector('.new-task-btn-wrapper');
 const body = document.body;
 const tasksDone = document.querySelector('.tasks-done-num');
+const toDo = document.querySelector('.tasks-todo-num');
+
 
 let windowWidth = window.innerWidth;
 console.log(windowWidth);
 
-let emptyCardsNum = ((windowWidth*0.8)/280)*2;
+const emptyCardsNum = ((windowWidth*0.8)/280)*2;
 
 for (let i = 0; i < emptyCardsNum; i++) {
     const emptyCard = document.createElement('div');
@@ -23,7 +25,7 @@ const editCardTitle = (_taskCardTitle) => {
     input.addEventListener('focus', () => {
         input.style.backgroundColor = input.value.length == input.maxLength ? 'rgba(245, 245, 220, 1)' : 'var(--font-color)';
     });
-    
+
     input.type = 'text';
     input.maxLength = 16;
     input.value = _taskCardTitle.textContent === 'Click to edit...' ? '' : _taskCardTitle.textContent;
@@ -48,9 +50,15 @@ const editCardTitle = (_taskCardTitle) => {
     })
 }
 
+
+let toDoNum = 0;
 const createCard = () => {
+    toDoNum++
+    toDo.innerText = toDoNum;
+
     const emptyCards = document.querySelectorAll('.task-card-empty');
-    emptyCards[0].remove();
+    if (emptyCards.length !== 1)
+        emptyCards[0].remove();
     
 
     const taskCard = document.createElement('div');
@@ -80,11 +88,16 @@ const createCard = () => {
     taskCardButtonDone.addEventListener('click', () => {
         taskCard.remove();
 
-        const emptyCard = document.createElement('div');
-        emptyCard.className = 'task-card-empty';
-        tasksWrapper.appendChild(emptyCard);
-
+        if (toDoNum-1 <= emptyCardsNum) {
+            const emptyCard = document.createElement('div');
+            emptyCard.className = 'task-card-empty';
+            tasksWrapper.appendChild(emptyCard);
+        }
+        
         tasksDone.innerText = tasksDoneNum++;
+        toDoNum--;
+        toDo.innerText = toDoNum;
+
     });
 
     taskCardDoneWrapper.appendChild(taskCardButtonDone);
@@ -107,3 +120,4 @@ newTaskBtn.addEventListener('click', () => {
 const creationYear = document.querySelector('.creation-year');
 let year = new Date().getFullYear();
 creationYear.innerHTML = year;
+

@@ -1,0 +1,11 @@
+.background-svg-1 {
+    position: absolute;
+    top: 9.5rem;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url('img/low-poly-grid-haikei.svg'); */
+    background-repeat: no-repeat;
+    background-size:cover;
+    z-index: -1;
+}
