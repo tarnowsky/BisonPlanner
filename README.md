@@ -3,49 +3,46 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Last Commit](https://img.shields.io/github/last-commit/tarnowsky/BisonPlanner)](https://github.com/tarnowsky/BisonPlanner/commits/main)
 
-BisonPlanner to prosta aplikacja typu **One-Page Web App**, ułatwiająca planowanie i organizację zadań. Projekt został stworzony z myślą o prostocie i przejrzystości, umożliwiając szybkie dodawanie, edytowanie oraz usuwanie wydarzeń.
+## 📝 Project Overview
 
-## 🚀 Demo
+BisonPlanner is a streamlined one-page web application designed as an educational project to demonstrate practical web development skills. Created during advanced JavaScript tutoring classes, this task management tool exemplifies core web development principles through a clean, intuitive interface for organizing daily tasks.
 
-🔗 [Zobacz aplikację w akcji](https://tarnowsky.github.io/BisonPlanner/)
+## 🚀 Live Demo
 
-## 📌 Funkcje
+🔗 [View Application](https://tarnowsky.github.io/BisonPlanner/)
 
-✅ Intuicyjny interfejs użytkownika  
-✅ Możliwość dodawania, edytowania i usuwania wydarzeń  
-✅ Zapis danych w **Local Storage**, dzięki czemu są zachowywane po odświeżeniu strony  
-✅ Responsywny design dostosowany do różnych urządzeń  
+## ✨ Key Features
 
-## 🛠️ Technologie
+- **Intuitive User Interface**: Designed for seamless task management
+- **Full CRUD Functionality**: Add, edit, and delete events with ease
+- **Persistent Storage**: Utilizes Local Storage to retain tasks between page reloads
+- **Responsive Design**: Optimized for various device screen sizes and types
 
-Projekt został zbudowany przy użyciu:
+## 🛠 Technology Stack
 
-- **HTML** – struktura aplikacji  
-- **CSS** – stylizacja interfejsu  
-- **JavaScript (ES6+)** – logika działania  
+The project showcases modern web development technologies:
+- **HTML5**: Semantic page structure
+- **CSS3**: Responsive and dynamic styling
+- **Vanilla JavaScript (ES6+)**: Robust client-side interactivity
 
-## 📦 Instalacja i uruchomienie
+## 🏁 Local Setup
 
-Aby uruchomić aplikację lokalnie:
+To run the project locally:
 
 ```sh
 git clone https://github.com/tarnowsky/BisonPlanner.git
 cd BisonPlanner
 ```
 
-Następnie otwórz plik `index.html` w przeglądarce.
+Open `index.html` directly in your web browser.
 
-## 📜 Licencja
+## 📚 Educational Context
 
-Projekt jest dostępny na licencji **MIT** – pełna treść w pliku [LICENSE](LICENSE).
+This project was developed as part of a comprehensive web development tutoring curriculum, serving multiple purposes:
+- Demonstrate practical JavaScript implementation
+- Teach modern web development best practices
+- Provide a hands-on learning experience in creating interactive web applications
 
-## 🤝 Współpraca
+## 🔒 License
 
-Masz pomysł na ulepszenie aplikacji? Chcesz zgłosić błąd?  
-Zapraszam do [zgłoszenia issue](https://github.com/tarnowsky/BisonPlanner/issues) lub stworzenia **pull requesta**.
-
-## 📧 Kontakt
-
-📌 Autor: **Michał Tarnowski**  
-📬 E-mail: [michal@example.com](mailto:michal@example.com) *(zaktualizuj na właściwy)*  
-📢 GitHub: [@tarnowsky](https://github.com/tarnowsky)
+Published under the MIT License. Full license details available in the [LICENSE](LICENSE) file.
